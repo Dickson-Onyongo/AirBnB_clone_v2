@@ -1,12 +1,7 @@
 #!/usr/bin/python3
 
 from flask import Flask
-
-
-"""
-Script that starts flask web application on port 5000.
-
-"""
+"""Script that starts flask web application on port 5000."""
 
 
 app = Flask(__name__)
