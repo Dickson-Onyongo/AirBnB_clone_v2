@@ -23,6 +23,7 @@ def HBNB_page():
 @app.route("/c/<text>", strict_slashes=False)
 def C_text(text):
     """Display “C ”followed by the value of the text variable"""
+    text = "is cool"
     formated_text = text.replace('_', ' ')
     return f"C {formated_text}"
 
