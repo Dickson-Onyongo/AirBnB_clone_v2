@@ -19,11 +19,11 @@ def HBNB_page():
     """Returns a short message "HBNB" """
     return"HBNB"
 
+text = "is cool"
 
 @app.route("/c/<text>", strict_slashes=False)
 def C_text(text):
     """Display “C ”followed by the value of the text variable"""
-    text = "is cool"
     formated_text = text.replace('_', ' ')
     return f"C {formated_text}"
 
@@ -31,7 +31,6 @@ def C_text(text):
 @app.route("/python/<text>", strict_slashes=False)
 def python_text(text):
     """Display “Python” followed by the value of the text variable"""
-    text = "is cool"
     formated_text = text.replace('_', ' ')
     return f"Python {formated_text}"
 
