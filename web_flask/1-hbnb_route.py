@@ -1,12 +1,15 @@
 #!/usr/bin/python3
-
-from flask import Flask
-
 """
+
 Script that starts a Flask web application on host 0.0.0.0
 and port 500.
 
 """
+
+
+from flask import Flask
+
+
 app = Flask(__name__)
 
 

@@ -1,25 +1,13 @@
 #!/usr/bin/python3
-
-from flask import Flask
 """Script that starts flask web application on port 5000."""
-
+from flask import Flask
 
 app = Flask(__name__)
 
 
 @app.route('/', strict_slashes=False)
 def hello():
-
-    """
-    Returns a greeting message.
-
-    Returns
-    -------
-    str
-        A greeting message "Hello HBNB!"
-
-    """
-
+    """Returns A greeting message "Hello HBNB!" """
     return "Hello HBNB!"
 
 
