@@ -19,7 +19,6 @@ def HBNB_page():
     """Returns a short message "HBNB" """
     return"HBNB"
 
-text = "is cool"
 
 @app.route("/c/<text>", strict_slashes=False)
 def C_text(text):
@@ -28,6 +27,7 @@ def C_text(text):
     return f"C {formated_text}"
 
 
+@app.route("/python/", defaults={'text': 'is cool'}, strict_slashes=False)
 @app.route("/python/<text>", strict_slashes=False)
 def python_text(text):
     """Display “Python” followed by the value of the text variable"""
